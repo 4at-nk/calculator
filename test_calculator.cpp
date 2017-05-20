@@ -20,6 +20,7 @@ int test_main(int argc, char* argv[])
 	BOOST_CHECK(Parse("- (- (-    1))") == -1);
 	BOOST_CHECK(Parse("1 + (2 * (2.54 + 2.54 + (3 - 2,5))) * (3 / 1.55)") == 22.6);
 	BOOST_CHECK(Parse("3 / 1.55-2*5") == -8.06);
+	BOOST_CHECK(Parse("1 + (1.4+2,7*3)-2") == 8.5);
 	
 	return 0;
 }
