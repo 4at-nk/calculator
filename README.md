@@ -1,2 +1,2 @@
 # calculator
-c++ console calculator progect
+c++ console calculator project
